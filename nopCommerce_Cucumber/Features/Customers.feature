@@ -1,11 +1,14 @@
 Feature: Customers
 
-Scenario: Add a customer
+Background: Below are the common steps for each scenario
 	 Given User launch chrome browser
 	 When User opens URL "https://admin-demo.nopcommerce.com/login"
 	 And User enters Email as "admin@yourstore.com" and Password as "admin"
 	 And Click on Login
 	 Then User cn view the dashboard
+
+Scenario: Add a customer
+	 
 	 When user clicks on Customers menu
 	 And click on Customers menu item
 	 And click on Add new button
@@ -16,11 +19,7 @@ Scenario: Add a customer
 	 And Close browser
 	 
 Scenario: Search Customer by EmailID
-	 Given User launch chrome browser
-	 When User opens URL "https://admin-demo.nopcommerce.com/login"
-	 And User enters Email as "admin@yourstore.com" and Password as "admin"
-	 And Click on Login
-	 Then User cn view the dashboard
+	 
 	 When user clicks on Customers menu
 	 And click on Customers menu item 
 	 And Enter customer email
@@ -29,11 +28,7 @@ Scenario: Search Customer by EmailID
 	 And Close browser
 	 
 Scenario: Search Customer by Name
-	 Given User launch chrome browser
-	 When User opens URL "https://admin-demo.nopcommerce.com/login"
-	 And User enters Email as "admin@yourstore.com" and Password as "admin"
-	 And Click on Login
-	 Then User cn view the dashboard
+	 
 	 When user clicks on Customers menu
 	 And click on Customers menu item 
 	 And Enter customer FirstName

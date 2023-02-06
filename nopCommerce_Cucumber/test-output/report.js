@@ -4,10 +4,10 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Add a customer",
+formatter.background({
+  "name": "Below are the common steps for each scenario",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "User launch chrome browser",
@@ -58,6 +58,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Add a customer",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "user clicks on Customers menu",
@@ -139,10 +144,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Search Customer by EmailID",
+formatter.background({
+  "name": "Below are the common steps for each scenario",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "User launch chrome browser",
@@ -193,6 +198,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Search Customer by EmailID",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "user clicks on Customers menu",
@@ -254,10 +264,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Search Customer by Name",
+formatter.background({
+  "name": "Below are the common steps for each scenario",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "User launch chrome browser",
@@ -308,6 +318,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Search Customer by Name",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "user clicks on Customers menu",
