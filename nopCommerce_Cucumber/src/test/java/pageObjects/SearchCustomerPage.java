@@ -129,7 +129,20 @@ public class SearchCustomerPage {
 			String emailId = table.findElement(By.xpath("//table[@id='customers-grid']//tbody/tr[" + i + "]/td[2]"))
 					.getText();
 			System.out.println(emailId);
-			if(emailId.equals(email)) {
+			if (emailId.equals(email)) {
+				flag = true;
+			}
+		}
+		return flag;
+	}
+
+	public boolean searchCustomerByName(String Name) {
+		boolean flag = false;
+		for (int i = 1; i <= getNoOfRows(); i++) {
+			String name = table.findElement(By.xpath("//table[@id='customers-grid']//tbody/tr[" + i + "]/td[3]"))
+					.getText();
+			System.out.println(name);
+			if (name.equals(Name)) {
 				flag = true;
 			}
 		}
