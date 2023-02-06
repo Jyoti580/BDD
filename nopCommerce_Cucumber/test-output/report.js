@@ -139,4 +139,119 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Search Customer by EmailID",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User launch chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.user_launch_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User opens URL \"https://admin-demo.nopcommerce.com/login\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_opens_url(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_enters_email_as_and_password_as(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_login()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User cn view the dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_cn_view_the_dashboard()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Customers menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_Customers_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Customers menu item",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_Customers_menu_item()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter customer email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.enter_customer_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on search button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.click_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should find email in search table",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_should_find_email_in_search_table()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Close browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.close_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
 });

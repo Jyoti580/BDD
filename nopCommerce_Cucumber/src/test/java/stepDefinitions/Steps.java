@@ -10,6 +10,7 @@ import cucumber.api.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
+import pageObjects.SearchCustomerPage;
 
 public class Steps extends BaseClass {
 
@@ -111,6 +112,28 @@ public class Steps extends BaseClass {
 	@Then("user can view confirmation message {string}")
 	public void user_can_view_confirmation_message(String msg) {
 		Assert.assertTrue(driver.findElement(By.tagName("body")).getText().contains(msg));
+	}
+
+	// Search customer by EmailID steps implementations.............
+
+	@When("Enter customer email")
+	public void enter_customer_email() {
+		searchCust = new SearchCustomerPage(driver);
+		searchCust.setEmail("victoria_victoria@nopCommerce.com");
+	}
+
+	@When("click on search button")
+	public void click_on_search_button() throws InterruptedException {
+		searchCust.clickSearch();
+		Thread.sleep(2000);
+	}
+
+	@Then("user should find email in search table")
+	public void user_should_find_email_in_search_table() {
+
+		boolean status = searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
+		Assert.assertEquals(true, status);
+
 	}
 
 }
